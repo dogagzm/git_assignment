@@ -25,6 +25,24 @@ $ git commit -m "README.md file created to main branch"
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
 
+ (base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$ git branch -c assignment
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$ git checkout assignment
+M       README.md
+Switched to branch 'assignment'
+Your branch is up to date with 'origin/main'.
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ nano README.md
+
+
 (base) 
 Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
 $ git add README.md 
