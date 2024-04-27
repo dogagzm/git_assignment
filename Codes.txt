@@ -1,1 +1,112 @@
 Git_Assignment Codes
+
+CODES
+
+(base) 
+Talan@Talan MINGW64 ~/Desktop/Assignements
+$ git clone https://github.com/dogagzm/git_assignment.git
+Cloning into 'git_assignment'...
+warning: You appear to have cloned an empty repository.
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$  echo " # Git Assignment - <dogagzm>" > README.md
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$ git add README.md 
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$ git commit -m "README.md file created to main branch"
+[main (root-commit) 449394e] README.md file created to main branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+(base) 
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git add README.md 
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+
+(base) 
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git status
+On branch assignment
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git commit -m "first 2 qustions are answered"
+[assignment c4c004b] first 2 qustions are answered
+ 1 file changed, 34 insertions(+)
+
+
+ (base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (main)
+$ git checkout assignment
+Switched to branch 'assignment'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git push origin assignment
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 796 bytes | 796.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'assignment' on GitHub by visiting:
+remote:      https://github.com/dogagzm/git_assignment/pull/new/assignment
+remote:
+To https://github.com/dogagzm/git_assignment.git
+ * [new branch]      assignment -> assignment
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ nano README.md
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git add README.md 
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git status
+On branch assignment
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+
+(base)
+Talan@Talan MINGW64 ~/Desktop/Assignements/git_assignment (assignment)
+$ git commit -m "all questions answered"
+[assignment cc7e0d4] all questions answered
+ 1 file changed, 49 insertions(+)
